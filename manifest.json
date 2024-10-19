@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Coursera Video Capture",
+    "version": "1.0",
+    "description": "Capture a specific area of the Coursera video screen.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "capture": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S"
+        },
+        "description": "Capture the defined screen area"
+      }
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+      }
+    }
+  }
